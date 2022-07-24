@@ -1,0 +1,35 @@
+@media only screen and (min-width: 540px) and (max-width: 768px){
+    div.slider{
+        display: grid;
+        grid-area: slide;
+        width: 100%;
+        height: 750px;
+    }
+    div.swiper-slide{
+        background-color: black;
+    }
+    div.swiper-slide>img{
+        opacity: 0.4;
+        object-fit: cover;
+    }
+    div.swiper-slide>div{
+        width: 70%;
+        height: 220px;
+        position: absolute;
+        align-items: center;
+    }
+    div.swiper-slide>div>h1{
+        width: 100%;
+        height: inherit;
+        font-size: 40px;
+        text-transform: capitalize;
+        color: navajowhite;
+    }
+    div.swiper-slide>div>p{
+        width: 100%;
+        height: inherit;
+        color: navajowhite;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}

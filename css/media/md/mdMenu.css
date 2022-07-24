@@ -1,0 +1,87 @@
+@media only screen and (max-width: 990px) and (min-width: 768px){
+    /* menu */
+    div.menuSmall{
+        display: none;
+    }
+    div.menu{
+        display: grid;
+        grid-area: menu;
+        padding: 10px 0;
+        box-sizing: border-box;
+        background-color: #05A8AA;
+        height: 80px;
+        grid-gap: 10px;
+        justify-content: center;
+        line-height: 60px;
+        border-radius: 0% 0% 100% 0% / 0% 0% 35% 100% ;
+        grid-template-areas:
+        "one two three four five six";
+    }
+    div.menu>div:nth-of-type(1){
+        width: 100px;
+        grid-area: one;
+        height: 60px;
+    }
+    div.menu>div:nth-of-type(2){
+        width: 100px;
+        grid-area: two;
+        height: 60px;
+    }
+    div.menu>div:nth-of-type(3){
+        width: 100px;
+        grid-area: three;
+        height: 60px;
+    }
+    div.menu>div:nth-of-type(4){
+        width: 100px;
+        grid-area: four;
+        height: 60px;
+    }
+    div.menu>div:nth-of-type(5){
+        width: 100px;
+        grid-area: five;
+        height: 60px;
+    }
+    div.menu>div{
+        text-align: center;
+        transition: all 300ms linear;
+    }
+    div.menu>div:nth-of-type(6){
+        width: 100px;
+        grid-area: six ;
+        text-transform: uppercase;
+        text-align: right;
+        grid-gap: 20px ;
+        color: coral;
+        transition: all 300ms linear;
+    }
+    div.menu>div>a{
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: navajowhite;
+        transition: all 300ms linear;
+    }
+    div.menu>div>span{
+        font-size: 20px;
+        text-decoration: none;
+        color: navajowhite;
+        transition: all 300ms linear;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    div.menu>div:hover{
+        border-radius: 100% 0% 100% 0% / 35% 65% 35% 65% ;
+        background-color: rebeccapurple;
+    }
+    div.menu>div:nth-of-type(6):hover{
+        background-color: #05A8AA;
+    }
+    div.menu>div:hover>a{
+        color: coral;
+    }
+    div.menu>div:hover>span{
+        color: coral;
+    }
+    /* end of menu */
+}

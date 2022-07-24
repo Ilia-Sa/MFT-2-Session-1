@@ -1,0 +1,120 @@
+@media only screen and (max-width: 990px) and (min-width: 768px){
+    /* news background */
+    div.newsWH{
+        width: 100%;
+        position: relative;
+        height: 1650px;
+    }
+    div.newsWH>img{
+        width: 100%;
+        object-fit: cover;
+        height: inherit;
+    }
+    /* end of news background */
+    div.news{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-area: news;
+        box-sizing: border-box;
+        padding: 40px 0;
+        justify-items: center;
+        justify-content: center;
+        grid-gap: 25px;
+        background-color: rgba(0, 0, 0, 0.6);
+        grid-template-areas:
+        'title title'
+        'one one'
+        'two two'
+    ;
+    }
+    div.news>h1{
+        width: 100%;
+        font-size: 38px;
+        grid-area: title;
+        text-transform: capitalize;
+        color: whitesmoke;
+        padding: 50px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    div.news>div{
+        display: grid;
+        width: 350px;
+        padding: 15px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-content: normal;
+        border-radius: 40px 10px 40px 10px;
+        grid-template-areas:
+        'image'
+        'header'
+        'text'
+        'submit'
+    ;
+    }
+    div.news>div>img{
+        grid-area: image;
+        width: 325px;
+        height: 300px;
+        object-fit: cover;
+        padding: 25px;
+        box-sizing: border-box;
+        border-radius: 10px 40px 10px 40px;
+        transform: scale(0.9);
+        transition: all 200ms linear;
+    }
+    div.news>div>h1{
+        grid-area: header;
+        padding: 5px;
+        margin: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        color: whitesmoke;
+        text-transform: capitalize;
+        border-radius: 10px 40px 10px 40px;
+    }
+    div.news>div>p{
+        width: 300px;
+        grid-area:text;
+        padding: 15px;
+        margin: 15px;
+        box-sizing: border-box;
+        color: whitesmoke;
+    }
+    div.news>div>span{
+        grid-area:submit;
+        height: 40px;
+        margin: 5px;
+        padding:0 20px;
+        font-size: 18px;
+        background-color: #b8d5b8;
+        color: #034e71;
+        border-radius: 15px 5px 15px 5px;
+        line-height: 40px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        justify-self: flex-end;
+        transition:all 300ms linear;
+    }
+
+    div.news>div:nth-of-type(1){
+        grid-area: one;
+        background-color: #034e71;
+    }
+    div.news>div:nth-of-type(2){
+        grid-area: two;
+        background-color: #034e71;
+    }
+
+    div.news>div>span:hover{
+        background-color: coral;
+        color: lightgreen;
+        box-shadow: inset 5px 5px 15px black;
+    }
+    div.news>div:hover>img{
+        transform: scale(1);
+    }
+}

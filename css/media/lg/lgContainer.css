@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1200px) and (min-width: 990px){
+    div.container {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "menu"
+            "slide"
+            "products"
+            "news"
+            "footer"
+        ;
+    }
+}

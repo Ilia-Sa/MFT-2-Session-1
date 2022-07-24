@@ -1,0 +1,160 @@
+@media only screen and (min-width: 540px) and (max-width: 768px){
+    div.products{
+        display: grid;
+        grid-area: products;
+        padding: 40px 0;
+        box-sizing: border-box;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas:
+        'title title title'
+        'one one one'
+        'two two two'
+        'three three three'
+    ;
+        background-color: #DC602E;
+        grid-gap:15px 15px;
+        height: 950px;
+    }
+    div.products>div{
+        border-radius: 25px;
+    }
+    div.products>div:nth-of-type(1){
+        grid-area: title;
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #05A8AA;
+    }
+    div.products>div:nth-of-type(2){
+        width: 250px;
+        grid-area: one;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #b8d5b8;
+        height: 250px;
+    }
+    div.products>div:nth-of-type(3){
+        width: 250px;
+        grid-area: two;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #b8d5b8;
+        height: 250px;
+    }
+    div.products>div:nth-of-type(4){
+        width: 250px;
+        grid-area: three;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #b8d5b8;
+        height: 250px;
+    }
+
+    div.products>div:nth-of-type(2)>div.product, div.products>div:nth-of-type(3)>div.product, div.products>div:nth-of-type(4)>div.product{
+        width: 215px;
+        height: 215px;
+        position: relative;
+        overflow: hidden;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.productMain, div.products>div:nth-of-type(3)>div.product>div.productMain, div.products>div:nth-of-type(4)>div.product>div.productMain{
+        width: inherit;
+        height: inherit;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.productMain>img, div.products>div:nth-of-type(3)>div.product>div.productMain>img, div.products>div:nth-of-type(4)>div.product>div.productMain>img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.cover, div.products>div:nth-of-type(3)>div.product>div.cover, div.products>div:nth-of-type(4)>div.product>div.cover{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top:-100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-areas:
+        'one two'
+        'name name'
+        'price price'
+    ;
+        transition: all 300ms linear;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.cover>span:nth-of-type(1), div.products>div:nth-of-type(3)>div.product>div.cover>span:nth-of-type(1), div.products>div:nth-of-type(4)>div.product>div.cover>span:nth-of-type(1){
+        grid-area: one;
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        margin: 5px;
+        border: 5px solid #DC602E;
+        border-radius: 35%;
+        justify-self: flex-end;
+        color: #DC602E;
+        transition: all 300ms linear;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.cover>span:nth-of-type(2), div.products>div:nth-of-type(3)>div.product>div.cover>span:nth-of-type(2), div.products>div:nth-of-type(4)>div.product>div.cover>span:nth-of-type(2){
+        grid-area: two;
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        margin: 5px;
+        border: 5px solid #DC602E;
+        border-radius: 35%;
+        justify-self: flex-start;
+        color: #DC602E;
+        transition: all 300ms linear;
+    }
+    /* name of the product*/
+    div.products>div:nth-of-type(2)>div.product>div.cover>div.coverBo, div.products>div:nth-of-type(3)>div.product>div.cover>div.coverBo, div.products>div:nth-of-type(4)>div.product>div.cover>div.coverBo{
+        grid-area: name;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background-color: #DC602E;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.cover>div.coverBo>h2, div.products>div:nth-of-type(3)>div.product>div.cover>div.coverBo>h2,
+    div.products>div:nth-of-type(4)>div.product>div.cover>div.coverBo>h2{
+        width: 100%;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: navajowhite;
+        text-align: center;
+    }
+    /* name of the product */
+    /* price tag */
+    div.products>div:nth-of-type(2)>div.product>div.cover>span:nth-of-type(3), div.products>div:nth-of-type(3)>div.product>div.cover>span:nth-of-type(3), div.products>div:nth-of-type(4)>div.product>div.cover>span:nth-of-type(3){
+        grid-area: price;
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+        background-color: #DC602E;
+        text-align: center;
+        justify-self: center;
+        line-height: 50px;
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        transition: all 300ms linear;
+    }
+    /* end of price tag */
+    div.products>div:nth-of-type(2)>div.product:hover>div.cover, div.products>div:nth-of-type(3)>div.product:hover>div.cover, div.products>div:nth-of-type(4)>div.product:hover>div.cover{
+        top: 0;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.cover>span:hover, div.products>div:nth-of-type(3)>div.product>div.cover>span:hover, div.products>div:nth-of-type(4)>div.product>div.cover>span:hover{
+        background-color: #b8d5b8;
+        color: #05A8AA;
+        border: 5px solid #05A8AA;
+    }
+    div.products>div:nth-of-type(2)>div.product>div.cover>span:nth-of-type(3):hover, div.products>div:nth-of-type(3)>div.product>div.cover>span:nth-of-type(3):hover, div.products>div:nth-of-type(4)>div.product>div.cover>span:nth-of-type(3):hover{
+        background-color: #b8d5b8;
+        color: #DC602E;
+        border: none;
+    }
+}
